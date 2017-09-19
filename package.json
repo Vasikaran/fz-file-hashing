@@ -1,0 +1,35 @@
+{
+    "name": "fz-file-hashing",
+    "version": "1.0.0",
+    "description": "for file hashing",
+    "main": "lib/index.js",
+    "scripts": {
+        "build": "babel src -d lib",
+        "build:clean": "node cleanCli.js",
+        "prepublish": "npm run build && npm run build:clean"
+    },
+    "babel": {
+        "presets": ["es2015"]
+    },
+    "bin": {
+        "fz-filehashing": "./bin/bin.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Vasikaran/fz-file-hashing.git"
+    },
+    "keywords": ["file_hash", "hashing"],
+    "author": "Vasikaran S <vasikaran.25@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Vasikaran/fz-file-hashing/issues"
+    },
+    "homepage": "https://github.com/Vasikaran/fz-file-hashing#readme",
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1"
+    },
+    "dependencies": {
+        "md5": "^2.2.1"
+    }
+}
